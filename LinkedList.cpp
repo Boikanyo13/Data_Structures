@@ -132,6 +132,14 @@ string LinkedList::getBack()const{
 
 }
 
+LinkedList::~LinkedList(){
+
+    while(!isEmpty()){
+       removeFront();
+    }
+    
+}
+
 int main()
 {
 
